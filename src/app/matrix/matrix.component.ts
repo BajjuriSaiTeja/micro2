@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './matrix.component.html',
   styleUrls: ['./matrix.component.scss']
 })
-export class MatrixComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class MatrixComponent {
 }

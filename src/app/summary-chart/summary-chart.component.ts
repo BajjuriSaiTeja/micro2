@@ -8,10 +8,10 @@ import {DatePipe} from "@angular/common";
   templateUrl: './summary-chart.component.html',
   styleUrls: ['./summary-chart.component.scss']
 })
-export class SummaryChartComponent implements OnInit {
-  public date = new Date();
-  dateFormatted = '';
-  public pieChartOptions: ChartOptions = {
+export class SummaryChartComponent {
+  // date = new Date();
+  dateFormatted = '2/14/2020';
+  pieChartOptions: ChartOptions = {
     responsive: true,
     legend: {
       position: 'bottom',
@@ -25,22 +25,13 @@ export class SummaryChartComponent implements OnInit {
       },
     }
   };
-  public pieChartLabels: Label[] = ['Past Due Not Deliverd', 'At Risk', 'Tracking On Time', 'Delivered'];
-  public pieChartData: number[] = [300, 500, 100, 50];
-  public pieChartType: ChartType = 'pie';
-  public pieChartLegend = true;
-  public pieChartColors = [
+  pieChartLabels: Label[] = ['Past Due Not Deliverd', 'At Risk', 'Tracking On Time', 'Delivered'];
+  pieChartData: number[] = [300, 500, 100, 50];
+  pieChartType: ChartType = 'pie';
+  pieChartLegend = true;
+  pieChartColors = [
     {
       backgroundColor: ['rgba(255,0,0,0.3)', 'rgba(0,255,0,0.3)', 'rgba(0,0,255,0.3)', 'rgba(255,0,255,0.3)'],
     },
   ];
-
-  constructor() {
-    const datePipe = new DatePipe('en')
-    this.dateFormatted = datePipe.transform(this.date, 'MM/dd/yy HH:mm');
-  }
-
-  ngOnInit() {
-  }
-
 }

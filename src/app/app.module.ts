@@ -22,12 +22,13 @@ import { MatrixComponent } from './matrix/matrix.component';
     MatIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [AppComponent],
+  // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(injector: Injector) {
     const shipmentList = createCustomElement(AppComponent, { injector });
-    customElements.define('app-summary', shipmentList);
+    customElements.define('ship-summary', shipmentList);
   }
 
   ngDoBootstrap() {}
