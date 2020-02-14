@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import {ChartsModule} from 'ng2-charts';
 import {MatCardModule, MatIconModule} from '@angular/material';
 import {createCustomElement} from '@angular/elements';
+import { SummaryChartComponent } from './summary-chart/summary-chart.component';
+import { MatrixComponent } from './matrix/matrix.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryChartComponent,
+    MatrixComponent
   ],
   imports: [
     BrowserModule,
