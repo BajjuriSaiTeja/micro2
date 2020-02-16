@@ -1,7 +1,7 @@
 {
     "name": "micro-ship-summary",
     "author":"Bajjuri Sai Teja",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "main": "bundles/micro-ship-summary.umd.js",
     "module": "index.js",
