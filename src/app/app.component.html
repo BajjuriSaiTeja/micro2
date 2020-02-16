@@ -3,8 +3,8 @@
     <div class="col-md-8">
       <app-matrix></app-matrix>
     </div>
-    <div class="col-md-4" style="height: 200px">
-      <app-summary-chart class="summary"></app-summary-chart>
+    <div class="col-md-4">
+      <app-summary-chart [refreshDateEvent]="flag" class="summary"></app-summary-chart>
     </div>
   </div>
 </div>
